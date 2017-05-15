@@ -15,6 +15,8 @@ import com.slava.viewpager.fragment.TitleFragment;
  */
 
 public class PagerAdapter  extends FragmentStatePagerAdapter{
+    static final int TAB_COUNT = 3;
+
     public PagerAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -42,7 +44,7 @@ public class PagerAdapter  extends FragmentStatePagerAdapter{
 
     @Override
     public int getCount() {
-        return 3;
+        return TAB_COUNT;
     }
 
     @Override
